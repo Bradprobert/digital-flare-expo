@@ -1,1 +1,1 @@
-# digital-flare-expo
+# Digital Flare

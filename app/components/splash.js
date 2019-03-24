@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet} from "react-native";
 import * as Progress from 'react-native-progress';
-import {colors, fonts, fontSizes} from "../constants";
+import {colors, fonts, fontSizes, strings} from "../constants";
 
 const styles = StyleSheet.create({
     container: {
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
 const Splash = props => {
     return (
         <View style={styles.container}>
-            {props.fontLoaded ? <Text style={styles.title}>Smart Supply</Text> : null}
+            {props.fontLoaded ? <Text style={styles.title}>{strings.brandName}</Text> : null}
             <Progress.CircleSnail size={50} indeterminate={true} color={colors.white}/>
         </View>
     );

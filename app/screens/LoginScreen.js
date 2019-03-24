@@ -69,7 +69,7 @@ export default class LoginScreen extends Component {
 
     onQuickLogin = () => {
         firebase.auth()
-          .signInWithEmailAndPassword('Tester@test.com', 'password')
+          .signInWithEmailAndPassword('abcd1234@email.com', 'password')
           .then((user) => {
               this.props.navigation.navigate('mainFlow');
           });
